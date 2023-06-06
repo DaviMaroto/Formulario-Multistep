@@ -1,8 +1,19 @@
 
 import {GrFormNext, GrFormPrevious } from "react-icons/gr"
+import UserForm from './components/UserForm'
+import ReviewForm from './components/ReviewForm'
+import Thanks from './components/Thanks'
+
+import { UseForm } from "./hooks/useForm"
+
 import './App.css'
 
 function App() {
+
+
+  const formComponents = [<UserForm />, <ReviewForm />, <Thanks />]
+
+  const {currentStep, currentComponent} = UseForm(formComponents)
 
 
   return (
@@ -14,6 +25,7 @@ function App() {
     <div className="form-container">
       <p>etapas</p>
       <form>
+        <div className="inputs-container">{currentComponent}</div>
         <div className="actions">
           <button type="button">
             <GrFormPrevious />
