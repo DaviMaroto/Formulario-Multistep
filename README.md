@@ -1,7 +1,7 @@
 
 # Formulário MultiStep
 
-Essa aplicação tem como objetivo mostrar um fomulário em múltiplas etapas para os usuário, mantendo a consistência dos dados e mostrando o resultado escolhido pelos usuários ao final da suas escolhas.  
+Essa aplicação tem como objetivo mostrar um fomulário em múltiplas etapas para os usuário, mantendo a consistência dos dados e mostrando o resultado escolhido pelos usuários antes do envio.  
 
 
 ## Documentação
